@@ -12,7 +12,7 @@
     $db = $database->connect(); 
 
     //Instantiate carmodel obj.
-    $carmodel = new Carmodel($db);
+    $empmodel = new Emplo($db);
     
     $result = $carmodel->read(); 
     //Get Row Count
