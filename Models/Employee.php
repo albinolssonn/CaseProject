@@ -1,6 +1,6 @@
 <?php
 
-    class Employees {
+    class Employee {
 
         // For DBconnection
 
