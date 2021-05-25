@@ -1,10 +1,12 @@
 <?php
+
     class Database{
+
         // DB Parameters
         private $host = 'localhost'; 
-        private $db_name = 'LunicoreDB'; 
+        private $db_name = 'carshop'; 
         private $username = 'root'; 
-        private $password = ''
+        private $password = ''; 
         private $conn; 
 
         //DB Connect
@@ -12,8 +14,8 @@
             $this->conn = null; 
 
             try{
-                $this->conn = new PDO('mysql:host=' . $this->host . ';dbname= ' . $this->db_name, $this->username, $this->password); 
-                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION) // Sets exceptions when queryhandling goes wrong
+                $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name,  $this->username, $this->password); 
+                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Sets exceptions when queryhandling goes wrong
             } catch(PDOExeption $e){
                 echo 'Connection Error: ' . $e->getMessage(); 
             }
