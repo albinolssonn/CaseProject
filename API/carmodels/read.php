@@ -28,10 +28,10 @@
             extract($row); 
 
             $car_item = array(
-                'Car_ID' => $car_id, 
-                'Brand' => $brand, 
-                'Model' => $model, 
-                'Price' => $price
+                'Car_ID' => $Car_ID, 
+                'Brand' => $Brand, 
+                'Model' => $Model, 
+                'Price' => $Price
             );
 
             // Push to data
