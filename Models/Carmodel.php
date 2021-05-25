@@ -56,4 +56,30 @@
             printf("Error: %s.\n", $stmt->error);
             return false; 
         }
+
+        // Delete carmodel
+        public function deleteCar(){
+            //Query
+            $query = 'DELETE FROM ' . $this->table . ' WHERE Car_ID = :Car_ID';
+
+            // Prepare Statement
+            $stmt = $this->conn->prepare($query); 
+
+            // Clean Data
+            $this->Car_ID = htmlspecialchars(strip_tags($this->Car_ID)); 
+
+            // Bind Data
+            $stmt->bindParam(':Car_ID', $this->Car_ID); 
+
+            // Execute Query
+            if($stmt->execute()){
+                return true; 
+            }
+            // Print error if something goes wrong
+            printf("Error: %s.\n", $stmt->error);
+            return false; 
+        }
+
+
+
     }
