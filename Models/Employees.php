@@ -1,24 +1,22 @@
 <?php
-    class Carmodel {
+    class Employees {
         // For DBconnection
         private $conn; 
-        private $table = 'Carmodels'; 
+        private $table = 'Employees'; 
 
         // Public Attributes
-        public $car_id; 
-        public $brand; 
-        public $model; 
-        public $price; 
+        public $emp_id; 
+        public $name; 
 
         // Constructor for DB
         public function __construct($db){
             $this->conn = $db; 
         }
 
-        // Readfunction for Carmodels
+        // Readfunction for Employees
         public function read(){
             //Query
-            $query = 'SELECT Car_ID, Brand, Model, Price FROM ' . $this->table . ''; 
+            $query = 'SELECT Emp_ID, Name FROM ' . $this->table . ''; 
             
             //Prep Statement
             $stmt = $this->conn->prepare($query); 
