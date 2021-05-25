@@ -5,7 +5,12 @@ function fetchData(){
 .then(data=>{
     console.log(data.data); 
     const html = data.data.map(employees => {
-        return `<p>Name: ${employees.Name}</p>`
+        return `
+        <div class="Employees">
+        <p>Name: ${employees.Name}</p>
+        <p>Empployee ID: ${employees.Emp_ID}</p>
+
+        </div>`
     })
     .join('');
     console.log(html); 
