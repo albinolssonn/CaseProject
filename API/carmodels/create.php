@@ -19,6 +19,7 @@
     // Get raw data
     $data = json_decode(file_get_contents("php://input")); 
 
+    // Data to be inserted - no ID since Auto
     $carmodel->Brand = $data->Brand;
     $carmodel->Model = $data->Model;
     $carmodel->Price = $data->Price;  
