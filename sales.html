@@ -1,79 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/caseproject/CSS/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
     <script src="/caseproject/JS/main.js"></script>
-
-    <title>Document</title>
+    <title>Sales</title>
 </head>
-<body id="page-top">
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
 
-        <!-- Sidebar - BootStrap -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<body>
+<div class="main">
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Case Project</div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Navigation
+    <div class="hero__section">
+        <div class="hero__content">
+            <div class="hero__title">
+                <h1>Sales</h1>
             </div>
+        </div>
+    </div>
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="/caseproject/index.html">
-                    <span>Home</span></a>
-            </li>
+    <div class="emp__container">
+        <h2>Dashboard</h2>
+        <div class="table__grid">
+            
+            <div class="table__container" id="sales_table">
+                <h3>Employees</h3>
+                <table class="top-row">
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Sales</th>
+                    </tr>
+                </table>
+                <table id="sales_read">
+                    <!-- Here goes Data -->
+                </table>
+            </div>
+        </div>      
+    </div>
+</div>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="/caseproject/carmodels.html">
-                    <span>Carmodels</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="/caseproject/employees.html">
-                    <span>Employees</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="/caseproject/sales.html">
-                    <span>Sales</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="/caseproject/create-delete.html">
-                    <span>Create & Delete</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span>Sign Up</span></a>
-            </li>
-
-        </ul>
-        <!-- End of Sidebar -->
-    
 </body>
 </html>

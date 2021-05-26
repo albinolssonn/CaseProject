@@ -56,3 +56,33 @@ function fetchCarData(){
 }
 
 fetchCarData();
+
+
+// Method for fetch Sales per Emp
+function fetchSalesData(){
+    fetch("http://localhost:8080/caseproject/API/employees/readSales.php").then(response =>{
+    return response.json(); 
+})
+.then(data=>{
+    console.log(data.data); 
+    const html = data.data.map(employees => {
+        return  `
+        <tr>
+        <td>${employees.Emp_ID}</td>
+        <td>${employees.Name}</td>
+        <td>${employees.Sales}</td>
+        </tr>`
+
+    })
+    .join('');
+    console.log(html); 
+    document
+        .querySelector("#sales_read").innerHTML = html; 
+})
+.catch(error =>{
+    console.log(error);
+}); 
+}
+
+fetchSalesData();
+
