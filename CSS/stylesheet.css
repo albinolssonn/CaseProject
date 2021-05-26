@@ -18,7 +18,7 @@ h1{
 }
 
 .main{
-    height: 90vh;
+    height: 100vh;
 }
 /* Global end */
 
@@ -54,9 +54,22 @@ h1{
     grid-template-columns: 1fr 1.2fr;
 }
 
+.table__sales{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 .table__container{
     padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.table__container__sales{
+    padding: 40px;
+    margin: auto;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -72,7 +85,12 @@ h1{
     height: fit-content;
     margin-right: auto;
     margin-left: 20px;
+}
 
+#sales_table{
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 table{
@@ -110,3 +128,7 @@ tr:nth-child(even) {
     justify-content: center;
 
 }
+
+
+
+
