@@ -46,16 +46,28 @@ h1{
 
 .table__grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
 }
 
 .table__container{
     padding: 40px;
-    margin-left: auto; 
-    margin-right: auto; 
+
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#car_table{
+    height: fit-content;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#emp_table{
+    height: fit-content;
+    margin-right: auto;
+    margin-left: 20px;
+
 }
 
 table{
