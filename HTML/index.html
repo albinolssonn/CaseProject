@@ -7,14 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-
+    <!-- Read Employees Div -->
     <div class="emp__container">
+        <input type="submit" value="Employees" onclick="fetchEmpData();">
         <div class="read" id="emp_read"></div>
     </div>
 
+    <!-- Read Cars Div -->
     <div class="car_container">
+        <input type="submit" value="Carmodels" onclick="fetchCarData();">
         <div class="read" id="car_read"></div>
     </div>
+
+    <!-- Delete Cars Form -->
+    <form action="" method="DELETE" onsubmit="metod();">
+        <input type="text" id="car_id_delete">
+        <input type="submit" value="Delete Car">
+    </form>
+
+    <!-- Create Cars Form -->
+    <form action="" method="POST" onsubmit="metod();">
+        <input type="text" id="car_brand_create">
+        <input type="text" id="car_model_create">
+        <input type="text" id="car_price_create">
+
+        <input type="submit" value="Create Car">
+    </form>
+
+
+    
+
 
     
      
@@ -22,6 +44,6 @@
 </body>
 
 <script src="main.js"></script>
-<script src="c_read.js"></script>
+<!-- <script src="c_read.js"></script> -->
 
 </html>
