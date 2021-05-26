@@ -9,6 +9,7 @@
         public $emp_id; 
         public $name; 
 
+
         // Constructor for DB
         public function __construct($db){
             $this->conn = $db; 
