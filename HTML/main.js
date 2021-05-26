@@ -8,14 +8,14 @@ function fetchData(){
         return `
         <div class="Employees">
         <p>Name: ${employees.Name}</p>
-        <p>Empployee ID: ${employees.Emp_ID}</p>
+        <p>Employee ID: ${employees.Emp_ID}</p>
 
         </div>`
     })
     .join('');
     console.log(html); 
     document
-        .querySelector("#id").innerHTML = html; 
+        .querySelector("#emp_read").innerHTML = html; 
 })
 .catch(error =>{
     console.log(error);
