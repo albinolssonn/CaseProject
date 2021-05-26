@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/caseproject/HTML/stylesheet.css">
@@ -20,19 +21,20 @@
     </div>
 
     <!-- Delete Cars Form -->
-    <form action="" method="DELETE" onsubmit="metod();">
+    <form action="" method="DELETE" onsubmit="deleteCar();">
         <input type="text" id="car_id_delete">
         <input type="submit" value="Delete Car">
     </form>
 
     <!-- Create Cars Form -->
-    <form action="" method="POST" onsubmit="metod();">
+    <form action="" method="POST" onsubmit="createCar();">
         <input type="text" id="car_brand_create">
         <input type="text" id="car_model_create">
         <input type="text" id="car_price_create">
 
         <input type="submit" value="Create Car">
     </form>
+
 
 
     

@@ -23,8 +23,6 @@ function fetchEmpData(){
 }); 
 }
 
-// fetchCarData(); 
-
 
 // Fetch Method for Employees
 function fetchCarData(){
@@ -51,5 +49,3 @@ function fetchCarData(){
     console.log(error);
 }); 
 }
-
-// fetchEmpData(); 
