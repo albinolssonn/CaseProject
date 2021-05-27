@@ -45,9 +45,9 @@
                     <div class="formclass" id="remove">
                         <form action="#">
                             <input type="text" id="Car_ID" placeholder="Car ID">
-                            <input type="text" id="Model" placeholder="Model">
-                            <input type="text" id="Price" placeholder="Price">
-                            <button type="submit" name="submit">Add Car</button>
+                            <input type="text" id="Emp_ID" placeholder="Model">
+                            <input type="text" id="Price" placeholder="Sales ID">
+                            <button type="submit" name="submit">Add Sale</button>
                         </form>
                     </div>
                 </div>

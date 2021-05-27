@@ -67,6 +67,9 @@ include_once 'modules/navbar.php'
     </div>
 </div>
 
+<?php
+include_once 'modules/footer.php'
+?>
 
 </body>
 </html>
