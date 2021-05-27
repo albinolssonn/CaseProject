@@ -1,0 +1,32 @@
+//For carmodels
+
+// Get all carmodels
+SELECT Car_ID, Brand, Model, Price FROM Carmodels;
+
+//Create Carmodel
+INSERT INTO ' . $this->table . ' SET Brand = :Brand, Model = :Model, Price= :Price;
+
+//Delete carmodel
+DELETE FROM ' . $this->table . ' WHERE Car_ID = :Car_ID
+
+
+//For Employees
+
+// Get all employees
+SELECT Emp_ID, Name FROM Employees 
+
+// Get total sales per employee
+SELECT e.Emp_ID, e.Name, sum(c.Price) AS "Sales"
+FROM Employees e 
+JOIN Sales s 
+on e.Emp_ID = s.Emp_ID 
+JOIN Carmodels c 
+ON c.Car_ID = s.Car_ID
+GROUP BY e.name 
+ORDER BY e.Emp_ID'; 
+
+
+// Sales -> For testign
+
+//Get all sales
+SELECT Car_ID, Emp_ID, Sales_ID FROM Sales''

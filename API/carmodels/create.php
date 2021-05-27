@@ -17,7 +17,7 @@
     $carmodel = new Carmodel($db);
 
     // Get raw data
-    $data = json_decode(file_get_contents("php://input")); 
+    $data = json_decode(file_get_contents("php://input")); // Reads file into string
 
     // Data to be inserted - no ID since Auto
     $carmodel->Brand = $data->Brand;

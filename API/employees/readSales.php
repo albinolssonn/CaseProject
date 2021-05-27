@@ -29,7 +29,6 @@
         while($row = $result->fetch(PDO::FETCH_ASSOC)){
             extract($row); 
 
-
             $emp_item = array(
                 'Emp_ID' => $Emp_ID, 
                 'Name' => $Name, 
