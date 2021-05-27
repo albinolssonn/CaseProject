@@ -28,10 +28,10 @@ fetchEmpData();
 
 
 // Fetch Method for Carmodels
-function fetchCarData(){
+function fetchCarData(){ // Fetch data from API
     fetch("http://localhost:8080/caseproject/API/carmodels/read.php").then(response =>{
     return response.json(); 
-})
+}) // Log data 
 .then(data=>{
     console.log(data.data); 
     const html = data.data.map(Carmodels => {
@@ -46,10 +46,10 @@ function fetchCarData(){
         </tr>`
 
     })
-    .join('');
+    .join(''); 
     console.log(html); 
-    document
-        .querySelector("#car_read").innerHTML = html; 
+    document 
+        .querySelector("#car_read").innerHTML = html; // "Prints const HTML/data at #id"
 })
 .catch(error =>{
     console.log(error);
@@ -87,3 +87,13 @@ function fetchSalesData(){
 
 fetchSalesData();
 
+
+// Method for removing car
+function removeCar(){
+
+}
+
+// Method for adding car
+function addCar(){
+
+}

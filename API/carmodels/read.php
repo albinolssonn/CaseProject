@@ -13,7 +13,9 @@
     //Instantiate carmodel obj.
     $carmodel = new Carmodel($db);
     
+    //Gets result from carmodels read-function
     $result = $carmodel->read(); 
+    
     //Get Row Count
     $num = $result->rowCount(); 
 

@@ -44,7 +44,7 @@ include_once 'modules/navbar.php'
                 <div class="table__container__grid" id="emp_table">
                 <h3>Add car to database</h3>
                     <div class="formclass" id="remove">
-                        <form action="#">
+                        <form onSubmit="addCar()">
                             <input type="text" id="Brand" placeholder="Brand">
                             <input type="text" id="Model" placeholder="Model">
                             <input type="text" id="Price" placeholder="Price">
@@ -56,8 +56,8 @@ include_once 'modules/navbar.php'
                 <div class="table__container__grid" id="car_table">
                     <h3>Remove car from database</h3>
                     <div class="formclass" id="add">
-                        <form action="#">
-                            <input type="text" id="Brand" placeholder="Car ID">
+                        <form onSubmit="removecar()">
+                            <input type="text" id="car_id" placeholder="Car ID">
                             <button type="submit" name="submit">Remove Car</button>
                         </form>
                     </div>
@@ -66,7 +66,6 @@ include_once 'modules/navbar.php'
         </div>
     </div>
 </div>
-
 
 
 </body>
