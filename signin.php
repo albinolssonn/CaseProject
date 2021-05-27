@@ -20,7 +20,7 @@ include_once 'modules/navbar.php'
         
         <div class="table__grid">
             
-            <div class="table__container" id="emp_table">
+            <div class="table__container__grid" id="emp_table">
             <h3>Sign Up</h3>
                 <div class="formclass" id="remove">
                     <form action="#">
@@ -34,7 +34,7 @@ include_once 'modules/navbar.php'
                 </div>
             </div>
 
-            <div class="table__container" id="car_table">
+            <div class="table__container__grid" id="car_table">
                 <h3>Log In</h3>
                 <div class="formclass" id="add">
                     <form action="#">

@@ -19,7 +19,7 @@ include_once 'modules/navbar.php'
         <h2>Dashboard</h2>
         <div class="table__grid">
             
-            <div class="table__container" id="emp_table">
+            <div class="table__container__grid" id="emp_table">
                 <h3>Employees</h3>
                 <table class="top-row">
                     <tr>
@@ -33,7 +33,7 @@ include_once 'modules/navbar.php'
                 <button onclick="fetchEmpData();">Update Table</button>
             </div>
 
-            <div class="table__container" id="car_table">
+            <div class="table__container__grid" id="car_table">
                 <h3>Carmodels</h3>
                 <table class="top-row">
                     <tr>

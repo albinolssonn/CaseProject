@@ -15,9 +15,9 @@ include_once 'modules/navbar.php'
     <div class="content__container">
         <h2>Car Data</h2>
         
-        <div class="table__section">
+        <div class="table__single">
             
-            <div class="table__container">
+            <div class="table__container__single" id="single_table">
                 <h3>Carmodels</h3>
                 <table class="top-row">
                     <tr>
@@ -31,6 +31,7 @@ include_once 'modules/navbar.php'
                     <!-- Here goes data -->
                 </table>
                 <button onclick="fetchCarData();">Update Table</button>
+
             </div>
         </div>    
     </div>
@@ -40,7 +41,7 @@ include_once 'modules/navbar.php'
 
         <div class="table__grid">
                 
-                <div class="table__container" id="emp_table">
+                <div class="table__container__grid" id="emp_table">
                 <h3>Add car to database</h3>
                     <div class="formclass" id="remove">
                         <form action="#">
@@ -52,7 +53,7 @@ include_once 'modules/navbar.php'
                     </div>
                 </div>
 
-                <div class="table__container" id="car_table">
+                <div class="table__container__grid" id="car_table">
                     <h3>Remove car from database</h3>
                     <div class="formclass" id="add">
                         <form action="#">
@@ -66,9 +67,6 @@ include_once 'modules/navbar.php'
     </div>
 </div>
 
-<?php
-include_once 'modules/footer.php'
-?>
 
 
 </body>

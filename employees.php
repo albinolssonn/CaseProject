@@ -15,9 +15,9 @@ include_once 'modules/navbar.php'
     <div class="content__container">
         <h2>Employee Data</h2>
         
-        <div class="table__section">
+        <div class="table__single">
             
-            <div class="table__container">
+            <div class="table__container__single" id="single_table">
                 <h3>Employees</h3>
                 <table class="top-row">
                     <tr>
@@ -29,17 +29,16 @@ include_once 'modules/navbar.php'
                     <!-- Here goes data -->
                 </table>
                 <button onclick="fetchEmpData();">Update Table</button>
+
             </div>
         </div>    
     </div>
-
-
     <div class="content__container">
         <h2>Sales board</h2>
         
-        <div class="table__section">
+        <div class="table__single">
             
-            <div class="table__container">
+            <div class="table__container__single" id="single_table">
                 <h3>Sales Table</h3>
                 <table class="top-row">
                     <tr>
@@ -51,16 +50,20 @@ include_once 'modules/navbar.php'
                 <table id="sales_read">
                     <!-- Here goes Data -->
                 </table>
-                <button onclick="fetchEmpData();">Update Table</button>
+                <button onclick="fetchSalesData();">Update Table</button>
 
             </div>
         </div>    
     </div>
 </div>
 
+
+
+
+
 <?php
 include_once 'modules/footer.php'
 ?>
-    
+
 </body>
-</html>
+</html> 
