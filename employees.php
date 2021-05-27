@@ -7,7 +7,7 @@ include_once 'modules/navbar.php'
     <div class="hero__section">
         <div class="hero__content">
             <div class="hero__title">
-                <h1>Welcome to caseproject</h1>
+                <h1>Employees</h1>
             </div>
         </div>
     </div>
