@@ -40,7 +40,11 @@ include_once 'modules/navbar.php'
                     <form action="#">
                         <input type="text" id="uid" placeholder="Username" >
                         <input type="password" id="pwd" placeholder="Password" >
-                        <button type="submit" name="submit">Sign Up</button>
+                        <button type="submit" name="submit">Log in</button>
+            
+                        <div class="demonstration__link">
+                            <a href="/caseproject/profile.php">Demonstration Link</a>
+                        </div>
                     </form>
                 </div>
             </div>
