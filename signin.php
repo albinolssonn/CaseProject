@@ -16,7 +16,7 @@ include_once 'modules/navbar.php'
     </div>
 
     <div class="content__container">
-        <h2>Registrate and Log in</h2>
+        <h2>Register and Log in</h2>
         
         <div class="table__grid">
             
@@ -46,14 +46,13 @@ include_once 'modules/navbar.php'
             </div>
         </div>      
     </div>
-    </div>
 </div>
 
+<?php
+include_once 'modules/footer.php'
+?>
 
-
-<div>
-    test
-</div>    
+  
 
 </body>
 </html>

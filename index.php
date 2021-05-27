@@ -30,6 +30,7 @@ include_once 'modules/navbar.php'
                 <table id="emp_read">
                     <!-- Here goes Data -->
                 </table>
+                <button onclick="fetchEmpData();">Update Table</button>
             </div>
 
             <div class="table__container" id="car_table">
@@ -45,10 +46,15 @@ include_once 'modules/navbar.php'
                 <table id="car_read">
                     <!-- Here goes data -->
                 </table>
+                <button onclick="fetchCarData();">Update Table</button>
             </div>
         </div>      
     </div>
 </div>
+
+<?php
+include_once 'modules/footer.php'
+?>
 
 
 
