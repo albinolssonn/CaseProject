@@ -6,6 +6,7 @@ function fetchEmpData(){
 .then(data=>{
     console.log(data.data); 
     const html = data.data.map(employees => {
+        // return value to put into html
         return `
 
         <tr>
