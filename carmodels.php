@@ -15,9 +15,9 @@ include_once 'modules/navbar.php'
     <div class="content__container">
         <h2>Car Data</h2>
         
-        <div class="table__sales">
+        <div class="table__section">
             
-            <div class="table__container__sales" id="sales_table">
+            <div class="table__container">
                 <h3>Carmodels</h3>
                 <table class="top-row">
                     <tr>

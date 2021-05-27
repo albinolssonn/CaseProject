@@ -15,9 +15,9 @@ include_once 'modules/navbar.php'
     <div class="content__container">
         <h2>Employee Data</h2>
         
-        <div class="table__sales">
+        <div class="table__section">
             
-            <div class="table__container__sales" id="sales_table">
+            <div class="table__container">
                 <h3>Employees</h3>
                 <table class="top-row">
                     <tr>
@@ -29,7 +29,6 @@ include_once 'modules/navbar.php'
                     <!-- Here goes data -->
                 </table>
                 <button onclick="fetchEmpData();">Update Table</button>
-
             </div>
         </div>    
     </div>
@@ -38,11 +37,12 @@ include_once 'modules/navbar.php'
     <div class="content__container">
         <h2>Sales board</h2>
         
-        <div class="table__sales">
+        <div class="table__section">
             
             <div class="table__container">
                 <h3>Sales Table</h3>
-                <table class="top-row">                    <tr>
+                <table class="top-row">
+                    <tr>
                         <th>Employee ID</th>
                         <th>Name</th>
                         <th>Sales</th>
@@ -51,7 +51,7 @@ include_once 'modules/navbar.php'
                 <table id="sales_read">
                     <!-- Here goes Data -->
                 </table>
-                <button onclick="fetchSalesData();">Update Table</button>
+                <button onclick="fetchEmpData();">Update Table</button>
 
             </div>
         </div>    
