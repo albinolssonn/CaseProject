@@ -18,6 +18,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="employees.php">Employees</a></li>
+        <li><a href="carmodels.php">Carmodels</a></li>
         <li><a href="sales.php">Sales</a></li>
         <li><a href="signup.php">Sign Up</a></li>
         <li><a href="login.php">Log In</a></li>

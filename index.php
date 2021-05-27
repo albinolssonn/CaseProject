@@ -15,7 +15,7 @@ include_once 'modules/navbar.php'
         </div>
     </div>
 
-    <div class="emp__container">
+    <div class="content__container">
         <h2>Dashboard</h2>
         <div class="table__grid">
             
@@ -50,9 +50,7 @@ include_once 'modules/navbar.php'
     </div>
 </div>
 
-<div>
-    test
-</div>    
+
 
 </body>
 </html>

@@ -17,29 +17,42 @@ h1{
     font-size: 40px;
 }
 
+.formclass{
+    display:flex; 
+    justify-content: center;
+    width: 500px;
+}
+
+form{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    border-width: thin;
+    padding: 10px 0; 
+    border-color: #ccc;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 .main{
     height: 100vh;
 }
-/* Global end */
-
-/* Navbar */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    float: left;
-  }
-
-a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
-
-
 
 .hero__section{
     background: black;
@@ -56,14 +69,56 @@ a {
 .hero__title{
     color: white;
 }
+/* Global end */
 
-.emp__container{
+/* Navbar */
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #0f0f0f;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+a:hover{
+    color: rgb(173, 173, 173);
+    text-decoration: underline;
+    transition: ease-in 0.2s;
+}
+
+/* Navbar End */
+
+
+
+.content__container{
     padding: 50px 70px;
     background: whitesmoke;
 }
 
-.emp__container h2{
+.content__container h2{
     margin-bottom: 20px;
+}
+
+.content__container:nth-child(odd){
+    background-color: #ccc;
 }
 
 .table__grid{
